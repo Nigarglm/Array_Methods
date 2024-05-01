@@ -153,3 +153,26 @@ for(i=0; i<athletes.length; i++){
         console.log(athletes[i]);
     }
 }
+
+
+////////// TASK-7
+
+const athlete = prompt("Atletin adini daxil edin");
+
+for(i=0; i<athletes.length; i++){
+    if(athlete == athletes[i].name){
+        if(athletes[i].hasWorldRecord && athletes[i].gender=="Male"){
+            console.log("dunya rekordu var");
+        }
+        else if(athletes[i].hasWorldRecord == false && athletes[i].gender=="Male"){
+            console.log("dunya rekordu yoxdur");
+        }
+        else{
+            console.log("bu atlet kisi deyil");
+        }
+    } 
+    else{
+       console.log("bele atlet movcud deyil");
+    }
+}
+
