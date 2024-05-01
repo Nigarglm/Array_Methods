@@ -142,3 +142,14 @@ for(i=0; i<athletes.length; i++){
    sum += athletes[i].totalMedals;
 }
 console.log(sum);
+
+
+////////// TASK-6
+
+const athleteName = prompt("Atletin adini daxil edin");
+
+for(i=0; i<athletes.length; i++){
+    if(athleteName==athletes[i].name){
+        console.log(athletes[i]);
+    }
+}
