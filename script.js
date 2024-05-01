@@ -132,3 +132,13 @@ for(i=0; i<athletes.length; i++){
     atleteNamesAndCountries.push(athletes[i].name, athletes[i].country);
 }
 console.log(atleteNamesAndCountries);
+
+
+///////// TASK-5
+
+let sum =0;
+
+for(i=0; i<athletes.length; i++){
+   sum += athletes[i].totalMedals;
+}
+console.log(sum);
