@@ -122,3 +122,13 @@ for(i=0; i<athletes.length; i++){
     atleteNames.push(athletes[i].name);
 }
 console.log(atleteNames);
+
+
+////////// TASK-4
+
+const atleteNamesAndCountries = []
+
+for(i=0; i<athletes.length; i++){
+    atleteNamesAndCountries.push(athletes[i].name, athletes[i].country);
+}
+console.log(atleteNamesAndCountries);
