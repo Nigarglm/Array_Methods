@@ -112,3 +112,13 @@ for(i=0; i<athletes.length; i++){
     }
 }
 console.log(femaleAthletes);
+
+
+////////// TASK-3
+
+const atleteNames = []
+
+for(i=0; i<athletes.length; i++){
+    atleteNames.push(athletes[i].name);
+}
+console.log(atleteNames);
