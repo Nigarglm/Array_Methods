@@ -100,3 +100,15 @@ for(i=0; i<athletes.length; i++){
     }
 }
 console.log(worldRecordHolders);
+
+
+////////// TASK-2
+
+const femaleAthletes = []
+
+for(i=0; i<athletes.length; i++){
+    if(athletes[i].totalMedals>=10 && athletes[i].gender=="Female"){
+        femaleAthletes.push(athletes[i]);
+    }
+}
+console.log(femaleAthletes);
