@@ -176,3 +176,16 @@ for(i=0; i<athletes.length; i++){
     }
 }
 
+
+////////// TASK-8
+
+const usaAthletes = []
+
+for(i=0; i<athletes.length; i++){
+    if(athletes[i].country=="United States" && athletes[i].hasWorldRecord){
+        usaAthletes.push(athletes[i].name);
+    }
+}
+console.log(usaAthletes);
+
+
