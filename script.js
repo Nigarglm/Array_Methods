@@ -189,3 +189,13 @@ for(i=0; i<athletes.length; i++){
 console.log(usaAthletes);
 
 
+////////// TASK-9
+
+let avgAge=0;
+
+for(i=0; i<athletes.length; i++){
+    if(athletes[i].gender=="Male"){
+        avgAge += athletes[i].age/athletes.length;
+    }
+}
+console.log(avgAge);
