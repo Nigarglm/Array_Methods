@@ -112,3 +112,80 @@ for(i=0; i<athletes.length; i++){
     }
 }
 console.log(femaleAthletes);
+
+
+////////// TASK-3
+
+const atleteNames = []
+
+for(i=0; i<athletes.length; i++){
+    atleteNames.push(athletes[i].name);
+}
+console.log(atleteNames);
+
+
+////////// TASK-4
+
+const atleteNamesAndCountries = []
+
+for(i=0; i<athletes.length; i++){
+    atleteNamesAndCountries.push(athletes[i].name, athletes[i].country);
+}
+console.log(atleteNamesAndCountries);
+
+
+///////// TASK-5
+
+let sum =0;
+
+for(i=0; i<athletes.length; i++){
+   sum += athletes[i].totalMedals;
+}
+console.log(sum);
+
+
+////////// TASK-6
+
+const athleteName = prompt("Atletin adini daxil edin");
+
+for(i=0; i<athletes.length; i++){
+    if(athleteName==athletes[i].name){
+        console.log(athletes[i]);
+    }
+}
+
+
+////////// TASK-7
+
+const athlete = prompt("Atletin adini daxil edin");
+
+for(i=0; i<athletes.length; i++){
+    if(athlete == athletes[i].name){
+        if(athletes[i].hasWorldRecord && athletes[i].gender=="Male"){
+            console.log("dunya rekordu var");
+        }
+        else if(athletes[i].hasWorldRecord == false && athletes[i].gender=="Male"){
+            console.log("dunya rekordu yoxdur");
+        }
+        else{
+            console.log("bu atlet kisi deyil");
+        }
+    } 
+    else{
+       console.log("bele atlet movcud deyil");
+    }
+}
+
+
+////////// TASK-8
+
+const usaAthletes = []
+
+for(i=0; i<athletes.length; i++){
+    if(athletes[i].country=="United States" && athletes[i].hasWorldRecord){
+        usaAthletes.push(athletes[i].name);
+    }
+}
+console.log(usaAthletes);
+
+
